@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7) , rgba(4,9,30,0.7)), url(eduford_img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+   
+}
+
+#header .header{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 2% 5%;
+}
+
+#header .header  .nav-list ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+#header .header  .nav-list ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 13px;
+}
+
+#header .header  .nav-list ul li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background-color: crimson;
+    display: block;
+    margin: auto;
+    transition: .3s ease;
+
+
+}
+
+#header .header  .nav-list ul li:hover::after
+{
+    width: 60%;
+}
+
+#header .header .brand{
+    width: 190px;
+}
+
+#header .header .brand img{
+    width: 100%;
+    height: 100%;
+}
+
+#header .text-box{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px auto;
+    color: white;
+    text-align: center;
+}
+
+#header .text-box h1{
+    font-size: 62px;
+}
+
+
+#header .text-box p{
+    font-size: 14px;
+    margin: 10px 0 40px;
+}
+
+#header .text-box a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 24px;
+    font-size: 13px;
+}
+
+#header .text-box a:hover{
+    border: 1px solid #f44336;
+    background-color: #f44336 ;
+    transition: 1s;
+}
+
+.header .fas{
+    display: none;
+}
+
+ /* Courses */
+  #courses .courses{  
+   width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    } 
+
+    .header_section h1{
+        font-size: 36px;
+        font-weight: 600;
+    }
+    #courses .courses .courses_list .courses_item p{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
+
+    #courses .courses_list
+    {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    }
+
+    #courses .courses_list .courses_item
+    {
+        flex-basis: 28%;
+        background-color: #fff3f3;
+        border-radius: 10px;
+        padding: 20px 12px;
+        margin-bottom: 5%;
+        transition: .5s;
+    }
+    #courses .courses_list .courses_item:hover{
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    h3{
+        font-weight: 600;
+    }
+    /* End Courses */
+
+
+    /* cumps */
+    #cumps .cumps{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 90px;
+    padding: 20px;
+    }
+    #cumps .cumps_list
+    {
+        display: flex;
+    justify-content: space-between;
+    }
+
+    #cumps .cumps_list .cumps_item
+    {
+        flex-basis: 80%;
+        overflow: hidden;
+        margin:20px;
+        border-radius: 10px;
+        position: relative;
+        
+
+    }
+
+    #cumps .cumps_list .cumps_item::after
+    {
+        content: attr(data-after);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        text-align: center;
+        font-size: 20px;
+       text-transform: uppercase;
+        transition: 0.3s ease;
+        padding-top: 411px;
+    }
+
+    #cumps .cumps_list .cumps_item:hover::after{
+        background-color:rgba(226,0,0,0.7);
+        padding-top: 0px;
+    }
+
+    #cumps .cumps_list .cumps_item img{
+    height: 100%;
+    width: 100%;
+    }
+    
+    /* End cumps */
+
+
+    /* Student */
+#student .student{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    align-items: center;
+    margin-top: 90px;
+    }
+
+    #student .student_item{
+        flex-basis: 43%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: #fff3f3;
+        border-radius: 20px;
+        padding: 10px;
+        margin:20px
+    }
+ 
+    #student .student_item .student_info{
+            display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    #student .student_list
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px
+    }
+
+    #student .student_img{
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 50%;
+    } 
+
+   #student .student_img img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    }
+
+    #student .student_item .student_info p{
+        font-size: 14px;
+font-weight: 300;
+line-height: 22px;
+padding: 10px;
+    }
+    
+    .fa, .fas , .fa, .far, .fas{
+        color: #f44336;
+    }
+    /* End Student */
+
+    /* About Us */
+    #about_us .about_us
+    {
+        
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #about_us .about_us .icons{
+        display: flex;
+        justify-content: space-between;
+        width: 13%;
+        margin-top: 20px;
+    }
+
+    .fab{
+        color: #f44336;
+    }
+    /* End About_us */
+
+@media(max-width:700px){
+    #header .text-box h1{
+        font-size: 20px;
+    }
+    #header .text-box p{
+        font-size: 13px;
+    }
+
+    #header .header .nav-list ul li{
+        display: block;
+    }
+
+    #header .header .nav-list{
+        background-color: #f44336;
+        width: 200px;
+        height: 100vh;
+        top: 0;
+        right: 0px;
+        position: absolute;
+        text-align: left;
+        display: none;
+        transition: .5s ease;
+    }
+
+    .header .fas{
+        display: block;
+        color: white;
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    #courses .courses .courses_list{
+        flex-direction: column;
+    }
+    #courses .courses .courses_list .courses_item{
+        padding-top: 10px;
+    }
+    #courses .courses .coursrs_header h1{
+        font-size: 30px;
+    }
+        .header_section h1{
+            font-size: 26px;
+        }
+
+        #cumps .cumps_list {  flex-direction: column;}
+        #student .student_list{flex-direction: column;}
+        #student .student_item{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #student .student_item .student_info{
+            align-items: center;
+        }
+
+        #about_us .about_us .icons{
+            width: 33%;
+        }
+
+        .header_section h1{
+            font-size: 25px;
+        }
+
+}
+
+@media screen and (max-width: 768px){
+    #student .student_item{
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #student .student_item .student_info{
+        align-items: center;
+    }
+
+    #header .text-box h1{
+        font-size: 43px;
+    }
+}
